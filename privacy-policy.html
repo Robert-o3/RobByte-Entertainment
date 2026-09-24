@@ -50,6 +50,27 @@
             max-width: 780px;
             margin: 0 auto;
             padding: 18px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+        }
+
+        nav.site-nav {
+            display: flex;
+            gap: 18px;
+            font-size: 0.95rem;
+        }
+
+        nav.site-nav a {
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        nav.site-nav a:hover,
+        nav.site-nav a[aria-current="page"] {
+            color: var(--accent);
         }
 
         .brand {
@@ -165,6 +186,11 @@
     <header>
         <div class="header-inner">
             <a class="brand" href="index.html">RobByte <span>Entertainment</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+            </nav>
         </div>
     </header>
 
